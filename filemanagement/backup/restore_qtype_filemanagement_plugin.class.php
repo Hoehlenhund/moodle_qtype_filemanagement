@@ -40,7 +40,7 @@ class restore_qtype_filemanagement_plugin extends restore_qtype_plugin
         $questioncreated = $this->get_mappingid('question_created', $oldquestionid) ? true : false;
 
         // If the question has been created by restore
-        // we need to create its qtype_ddmarker too.
+        // we need to create its qtype_filemanagement too.
         if ($questioncreated) {
             // Adjust some columns.
             $data->questionid = $newquestionid;
